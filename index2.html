@@ -74,8 +74,25 @@
                             class="ri-linkedin-box-line"></i></a>
                 </div>
                 <div class="nav__login nav__login--desktop" id="nav-login-desktop">
-                    <button class="google-signin-btn" id="google-signin-btn-desktop"><i
-                            class="ri-google-fill"></i><span>Sign In</span></button>
+
+                    <button class="auth-btn single-signin-btn" id="single-signin-btn-desktop">
+                        <i class="ri-login-box-line"></i><span>Sign In</span>
+                    </button>
+
+                    <div class="auth-options-container" id="auth-options-desktop" style="display: none;">
+                        <p>Sign In With:</p>
+
+                        <button class="auth-provider-btn google-signin-btn" id="google-signin-btn-desktop"
+                            title="Sign In with Google">
+                            <i class="ri-google-fill"></i> Google
+                        </button>
+
+                        <button class="auth-provider-btn github-signin-btn" id="github-signin-btn-desktop"
+                            title="Sign In with GitHub">
+                            <i class="ri-github-fill"></i> GitHub
+                        </button>
+                    </div>
+
                     <div class="user-profile" id="user-profile-desktop" style="display: none;">
                         <a href="dashboard.html">
                             <img src="" alt="User Avatar" id="user-avatar-desktop">
