@@ -56,15 +56,32 @@
             </div>
 
             <div class="nav__actions">
-                <div class="nav__social nav__social--desktop">
-                    <a href="https://www.instagram.com/" target="_blank" class="nav__social-link"><i
-                            class="ri-instagram-line"></i></a>
-                    <a href="https://github.com/" target="_blank" class="nav__social-link"><i
-                            class="ri-github-line"></i></a>
-                    <a href="https://dribbble.com/" target="_blank" class="nav__social-link"><i
-                            class="ri-dribbble-line"></i></a>
-                    <a href="https://www.linkedin.com/" target="_blank" class="nav__social-link"><i
-                            class="ri-linkedin-box-line"></i></a>
+                <div class="nav__login nav__login--desktop" id="nav-login-desktop">
+
+                    <button class="auth-btn single-signin-btn" id="single-signin-btn-desktop">
+                        <i class="ri-login-box-line"></i><span style="font-family: 'Montserrat Alternates', sans-serif;">Sign In</span>
+                    </button>
+
+                    <div class="auth-options-container" id="auth-options-desktop" style="display: none;">
+                        <p>Sign In With:</p>
+
+                        <button class="auth-provider-btn google-signin-btn" id="google-signin-btn-desktop"
+                            title="Sign In with Google">
+                            <i class="ri-google-fill"></i> Google
+                        </button>
+
+                        <button class="auth-provider-btn github-signin-btn" id="github-signin-btn-desktop"
+                            title="Sign In with GitHub">
+                            <i class="ri-github-fill"></i> GitHub
+                        </button>
+                    </div>
+
+                    <div class="user-profile" id="user-profile-desktop" style="display: none;">
+                        <a href="dashboard.html">
+                            <img src="" alt="User Avatar" id="user-avatar-desktop">
+                        </a>
+                        <button id="logout-btn-desktop" aria-label="Logout"><i class="ri-logout-box-fill"></i></button>
+                    </div>
                 </div>
                 <div class="nav__login nav__login--desktop" id="nav-login-desktop">
                     <button class="google-signin-btn" id="google-signin-btn-desktop"><i
